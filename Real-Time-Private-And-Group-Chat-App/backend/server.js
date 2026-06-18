@@ -21,12 +21,12 @@ const users = {};
 const groups = {};
 const privateMessages = {};
 
-// Helper: get all online users as a list
+// get all online users as a list
 function getOnlineUsers() {
   return Object.values(users);
 }
 
-// Helper: make a consistent key for two users (alphabetical order)
+// make a consistent key for two users (alphabetical order)
 function getPrivateRoomKey(user1, user2) {
   return [user1, user2].sort().join("_");
 }
