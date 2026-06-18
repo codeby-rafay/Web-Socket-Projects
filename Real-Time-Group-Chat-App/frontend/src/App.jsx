@@ -31,7 +31,6 @@ export default function App() {
           if (!isExist) {
             return [...prev, userName];
           }
-
           return prev;
         });
       });
