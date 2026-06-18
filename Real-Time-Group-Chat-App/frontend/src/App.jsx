@@ -99,7 +99,6 @@ export default function App() {
     };
     setMessages((m) => [...m, msg]);
 
-    // emit
     socket.current.emit("chatMessage", msg);
 
     setText("");
